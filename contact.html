@@ -15,8 +15,7 @@
 
 	<!-- Canonical link -->
 	<link rel="canonical" href="https://djaziraoc.github.io/la-chouette-agence-webdesign-nouvelle-version/accueil.html">
-	
-    
+	  
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://djaziraoc.github.io/la-chouette-agence-webdesign-nouvelle-version/accueil.html">
@@ -29,11 +28,11 @@
 	<meta name="twitter:title" content="Agence webdesign basée à Lyon">
 	<meta name="twitter:description" content="Contactez l'agence webdesign, spécialisée dans la Conception de site web sur mesure avec un design original, visible et accessible pour tout le monde basée à Lyon">
 	<meta name="twitter:image" content="">
+	<link rel="preload" href="./fonts/fontawesome-webfont.woff2" as="font" type="fonts/woff2" crossorigin>
 
 	<!--analytics-->
 	<!-- Global site tag (gtag.js) - Google Analytics 4 -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RG6N553VX"></script>
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-7RG6N553VX"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
@@ -42,12 +41,12 @@
 	gtag('config', 'G-7RG6N553VX');
 	</script>
 	<!-- Analytics END --> 
-
-	<link rel="shortcut icon" type="image/x-ico" href="favicon.ico">
-	<link rel="stylesheet" type="text/css"  href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	
+	<link rel="shortcut icon" type="image/x-ico" href="favicon.ico"/>
+	<link rel="preload" type="text/css" as="style" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css"  href="./css/bootstrap.min.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="style.min.css" media="all"/>
 
 </head>
 <body>
@@ -59,7 +58,7 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img title="lien retour à la page d'accueil" src="img/la-chouette-agence.webp" alt="photo d'une chouette représentant le logo de site web La chouate entreprise webdesign à Lyon" height="40" /></a>	
+				<a class="navbar-brand" href="index.html"><img loading="lazy" src="img/la-chouette-agence.svg"  width="387" height="40" title="lien retour à la page d'accueil" alt="photo d'une chouette représentant le logo de site web La chouate entreprise webdesign à Lyon" /></a>	
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -153,22 +152,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com/"  title="visitez notre compte twitter" target="_blank"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://twitter.com/"  title="visitez notre compte twitter" target="_blank" rel="noreferrer noopener"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com/" title="visitez notre page facebook" target="_blank"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://www.facebook.com/" title="visitez notre page facebook" target="_blank" rel="noreferrer noopener"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://dribbble.com/" title="visitez notre compte dribbble" target="_blank"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://dribbble.com/" title="visitez notre compte dribbble" target="_blank" rel="noreferrer noopener"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com/" title="visitez notre compte instagram" target="_blank"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://www.instagram.com/" title="visitez notre compte instagram" target="_blank" rel="noreferrer noopener"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>

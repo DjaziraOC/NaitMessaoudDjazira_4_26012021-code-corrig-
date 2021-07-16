@@ -31,12 +31,12 @@
 	<meta name="twitter:title" content="Agence webdesign située à Lyon">
 	<meta name="twitter:description" content="Contactez l'entreprise webdesign, spécialisée dans la Conception de site web sur mesure avec un design original, visible et accessible pour tout le monde basée à Lyon">
 	<meta name="twitter:image" content="">
-
+	
+	<link rel="preload" href="./fonts/fontawesome-webfont.woff2" as="font" type="fonts/woff2" crossorigin>
 	<!--analytics-->
 	<!-- Global site tag (gtag.js) - Google Analytics 4 -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RG6N553VX"></script>
-	<script>
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-7RG6N553VX"></script><!--async-->
+	<script defer>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
@@ -44,12 +44,14 @@
 	gtag('config', 'G-7RG6N553VX');
 	</script>
 	<!-- Analytics END --> 
-
+	
 	<link rel="shortcut icon" type="image/x-ico" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">	
+	<link rel="stylesheet" href="main.css"  type="text/html" media="all">
+    <link rel="preload" as="image" href="./img/la-chouette-agence-banniere.webp"/>
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" media="all"> 
+	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css" media="all">
+	<link rel="stylesheet" type="text/css"  href="./css/bootstrap.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="style.min.css" media="all"/>			
 </head>
 
 <body>
@@ -62,7 +64,7 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img title="logo" src="img/la-chouette-agence.webp" alt="photo d'une chouette représentant le logo de site web La chouate entreprise webdesign à Lyon" height="40" /></a>	
+				<a class="navbar-brand" href="index.html"><img loading="lazy" width="387" height="40"  src="img/la-chouette-agence.svg" title="logo" alt="photo d'une chouette représentant le logo de site web La chouate entreprise webdesign à Lyon"/></a>	
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -89,7 +91,7 @@
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
-				<img src="img/logo.webp" class="center-block image-resize-mode" width="100"  title="logo" alt="photo d'une chouette représentant le logo de site web La chouette entreprise webdesign à Lyon" />
+				<img loading="lazy" src="img/logo.png" class="center-block image-resize-mode"  width="100" height="100" title="logo" alt="photo d'une chouette représentant le logo de site web La chouette entreprise webdesign à Lyon" />
 				<h1 class="text-center hero-bloc-text tc-white ">
 					La chouette agence.
 				</h1>
@@ -198,7 +200,7 @@
 				<article class="col-sm-6">
 					<a  href="#" data-lightbox="img/site-web-journal.webp" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
 						<div class="img">		
-							<img src="img/site-web-journal.webp" title="Refonte d'un site web pour un journal local" alt="photo représentant des magasines colorés ouverts superposés" class="img-responsive portfolio-thumb">
+							<img loading="lazy" width="320" height="320" src="img/site-web-journal.webp" title="Refonte d'un site web pour un journal local" alt="photo représentant des magasines colorés ouverts superposés" class="img-responsive portfolio-thumb">
 						</div>
 					</a>
 					<h3 class="mg-md text-center">
@@ -211,7 +213,7 @@
 				<article class="col-sm-6">
 					<a href="#" data-lightbox="img/website-photographes.webp" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
 						<div class="img">
-							<img src="img/website-photographes.webp" class="img-responsive portfolio-thumb"  title="Création d'un site web pour photographes" alt="image d'une femme avec une capuche  en position de prendre une photo avec une caméra fixé sur un tripied ">
+							<img loading="lazy" width="320" height="320" src="img/website-photographes.webp" class="img-responsive portfolio-thumb"  title="Création d'un site web pour photographes" alt="image d'une femme avec une capuche  en position de prendre une photo avec une caméra fixé sur un tripied ">
 						</div>	
 					</a>
 					<h3 class="mg-md text-center">
@@ -226,7 +228,7 @@
 				<article class="col-sm-6">
 					<a href="#" data-lightbox="img/site-internet-voyageurs.webp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
 						<div class="img">
-							<img src="img/site-internet-voyageurs.webp" class="img-responsive portfolio-thumb" title="Création d'un site internet pour un voyageur" alt="une photo prise du haut représentant des accessoires photographique et objets high-tech organisés">
+							<img loading="lazy" width="320" height="320" src="img/site-internet-voyageurs.webp" class="img-responsive portfolio-thumb" title="Création d'un site internet pour un voyageur" alt="une photo prise du haut représentant des accessoires photographique et objets high-tech organisés">
 						</div>
 					</a>
 					<h3 class="mg-md text-center">
@@ -239,7 +241,7 @@
 				<article class="col-sm-6">
 					<a href="#" data-lightbox="img/site-digital-agences.webp" aria-label="close" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
 						<div class="img">	
-							<img src="img/site-digital-agences.webp" class="img-responsive portfolio-thumb" title="Conception d'un site pour une agence de mariage" alt="vu du haut d'un bureau en désordre avec la présence  des mains en train de travailler dessus">
+							<img loading="lazy" width="320" height="320" src="img/site-digital-agences.webp" class="img-responsive portfolio-thumb" title="Conception d'un site pour une agence de mariage" alt="vu du haut d'un bureau en désordre avec la présence  des mains en train de travailler dessus">
 						</div>
 					</a>
 					<h3 class="mg-md text-center">
@@ -286,22 +288,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com/" title="visitez notre compte twitter" target="_blank"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://twitter.com/" title="visitez notre compte twitter" target="_blank" rel="noreferrer noopener"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com/" title="visitez notre page facebook" target="_blank"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://www.facebook.com/" title="visitez notre page facebook" target="_blank" rel="noreferrer noopener"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://dribbble.com/" title="visitez notre compte dribble" target="_blank"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://dribbble.com/" title="visitez notre compte dribble" target="_blank" rel="noreferrer noopener"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com/" title="visitez notre compte instagram" target="_blank"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://www.instagram.com/" title="visitez notre compte instagram" target="_blank" rel="noreferrer noopener"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
@@ -318,6 +320,6 @@
 <script src="./js/blocs.min.js" defer></script>
 <script src="./js/jquery.touchSwipe.min.js" defer></script>
 <script src="./js/gmaps.min.js" defer></script> 
-</body>
 
+</body>
 </html>
